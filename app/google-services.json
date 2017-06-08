@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "660525747151",
+    "firebase_url": "https://materielsmobiles.firebaseio.com",
+    "project_id": "materielsmobiles",
+    "storage_bucket": "materielsmobiles.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660525747151:android:cc9975746778dddf",
+        "android_client_info": {
+          "package_name": "com.example.lucie.materielsmobiles"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660525747151-or93erojt8h456u7pq2i8e11ad6o5l97.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lucie.materielsmobiles",
+            "certificate_hash": "9ff86e3291a4d0ef22c0b02001aa38695a36e8bf"
+          }
+        },
+        {
+          "client_id": "660525747151-q1annlgn7c9h9s10irmn4tfggjg7nrok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFjhT0X3dTwTY-xajtFMHsLWpFXh4zjXU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660525747151-q1annlgn7c9h9s10irmn4tfggjg7nrok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
