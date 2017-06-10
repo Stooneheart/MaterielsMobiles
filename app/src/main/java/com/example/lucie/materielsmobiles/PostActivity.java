@@ -1,5 +1,6 @@
 package com.example.lucie.materielsmobiles;
 
+
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -24,6 +25,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
@@ -39,6 +41,16 @@ import java.io.FileOutputStream;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Random;
+
+import java.io.IOException;
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+
+
+
 
 public class PostActivity extends AppCompatActivity {
 
@@ -124,9 +136,16 @@ public class PostActivity extends AppCompatActivity {
                     newPost.child("gps").setValue(StrPosition);
 
                     mProgress.dismiss();
-                    Toast.makeText(PostActivity.this,"Uploading Finished ...",Toast.LENGTH_LONG).show();
-                }
-            });
+                    Toast.makeText(PostActivity.this,"Uploading Finished ...",Toast.LENGTH_LONG).show();}
+                    public void main(String[] args) throws IOException {
+                        PostExample example = new PostExample();
+                        String json = example.bowlingJson();
+                        String response = example.post("http://www.roundsapp.com/post", json);
+                        System.out.println(response);
+                    }
+
+                });
+            }
         }
     }
 
